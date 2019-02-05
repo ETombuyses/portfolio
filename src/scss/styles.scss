@@ -3,7 +3,7 @@
 
 /* Config */
 @import "config/colors.scss";
-@import "config/fonts.scss";
+
 @import "config/mixin.scss";
 @import "config/queries.scss";
 
@@ -12,6 +12,8 @@
 @import "global/interface.scss";
 @import "global/typography.scss";
 
+@import "config/fonts.scss";
+
 /* Blocs */
-@import "blocs/myName.scss";
-@import "blocs/about.scss";
+@import "blocs/landing.scss";
+@import "blocs/projects.scss";

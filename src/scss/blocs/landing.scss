@@ -1,0 +1,118 @@
+
+.landing {
+  background: linear-gradient(#1A2975, rgb(29, 10, 48));
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+
+.landing__icon {
+  width: 10%;
+  height: 10%;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.st1, .st2 {
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+  animation: dash 3s linear forwards;
+}
+
+.st0 {
+  opacity: 0;
+  animation: visible 3s linear forwards;
+}
+
+
+@keyframes dash {
+  
+  15% {
+    stroke-dashoffset: 550;
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes visible {
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.landing__title {
+  font-family: "nothing";
+  color: white;
+  font-size: 80px;
+  padding-top: 50px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  opacity: 0;
+  animation: visible 2s 0.5s forwards;
+}
+
+.landing__subtitle {
+  color: #C8A1F1;
+  font-family: "Montserrat"; // font to import
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  animation: visible 6s forwards;
+}
+
+.landing__line {
+  height: 0%;
+  opacity: 0;
+  width: 2px;
+  background-color: white;
+  margin: auto;
+}
+
+.landing__line--first {
+  animation: line 2s  0.2s forwards;
+}
+
+.landing__line--second {
+  animation: line 1s  1s forwards;
+}
+
+@keyframes line {
+  100% {
+    height: 10%;
+    opacity: 1;
+  }
+}
+
+.landing__intro {
+  color: rgba(255, 255, 255, 0.774);
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 200%;
+  font-weight: 100;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  opacity: 0;
+  animation: visible 1s 2s forwards;
+
+  strong {
+    font-weight: 600;
+  }
+}
