@@ -1,4 +1,22 @@
-.projects {
+.projects__nespresso {
   height: 100vh;
   background-color: rgb(29, 10, 48);
+  display: flex;
+  color: white;
+}
+
+
+.nespresso__images {
+  height: 200px;
+  width: 50vw;
+
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.nespresso__description {
+  width: 50vw;
 }
