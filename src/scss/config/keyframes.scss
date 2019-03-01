@@ -1,0 +1,73 @@
+@keyframes line {
+  100% {
+    height: 8vh;
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  
+  15% {
+    stroke-dashoffset: 550;
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes visible {
+
+  20% {
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-50%) translateY(20px); 
+    opacity: 0.8;
+  }
+}
+
+@keyframes scaling {
+  
+  0% {
+    scale: 0.7;
+  }
+
+  25%{
+    scale: 1.1;
+  }
+  
+  50% {
+    scale: 0.7;
+  }
+
+  100% {
+    scale: 0.7;
+  }
+}
+
+
+@keyframes appear {
+
+  0% {
+    opacity: 0;
+  }
+ 
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}

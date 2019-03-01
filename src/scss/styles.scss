@@ -6,6 +6,7 @@
 
 @import "config/mixin.scss";
 @import "config/queries.scss";
+@import "config/keyframes.scss";
 
 /* Global */
 @import "global/layout.scss";
@@ -15,5 +16,8 @@
 @import "config/fonts.scss";
 
 /* Blocs */
+@import "blocs/logo.scss";
 @import "blocs/landing.scss";
+@import "blocs/about.scss";
 @import "blocs/projects.scss";
+@import "blocs/externalLinks.scss";

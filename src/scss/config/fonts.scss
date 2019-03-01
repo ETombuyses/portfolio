@@ -1,3 +1,29 @@
-@include fontface ("nothing", "../assets/fonts/nothing-you-could-do/nothingyoucoulddo-webfont.woff", "../assets/fonts/nothing-you-could-do/nothingyoucoulddo-webfont.woff2", normal, normal);
+// name, woff, woff2, style, weight
+
+//Nothing you could do
+@include fontface ("Nothing", "../assets/fonts/nothing-you-could-do/nothingyoucoulddo-webfont.woff", "../assets/fonts/nothing-you-could-do/nothingyoucoulddo-webfont.woff2", normal, normal);
+
+//Montserrat
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-medium-webfont.woff", "../assets/fonts/montserrat/montserrat-medium-webfont.woff2", normal, bold);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-lightitalic-webfont.woff", "../assets/fonts/montserrat/montserrat-lightitalic-webfont.woff2", italic, lighter);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-light-webfont.woff", "../assets/fonts/montserrat/montserrat-light-webfont.woff2", normal, lighter);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-italic-webfont.woff", "../assets/fonts/montserrat/montserrat-italic-webfont.woff2", italic, normal);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-extralightitalic-webfont.woff", "../assets/fonts/montserrat/montserrat-extralightitalic-webfont.woff2", italic, 100);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-extralight-webfont.woff", "../assets/fonts/montserrat/montserrat-extralight-webfont.woff2", normal, 100);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-extrabolditalic-webfont.woff", "../assets/fonts/montserrat/montserrat-extrabolditalic-webfont.woff2", italic, 700);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-extrabold-webfont.woff", "../assets/fonts/montserrat/montserrat-extrabold-webfont.woff2", normal, 700);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-bolditalic-webfont.woff", "../assets/fonts/montserrat/montserrat-bolditalic-webfont.woff2", italic, bolder);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-bold-webfont.woff", "../assets/fonts/montserrat/montserrat-bold-webfont.woff2", normal, bolder);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-blackitalic-webfont.woff", "../assets/fonts/montserrat/montserrat-blackitalic-webfont.woff2", italic, 900);
+@include fontface ("Montserrat", "../assets/fonts/montserrat/montserrat-black-webfont.woff", "../assets/fonts/montserrat/montserrat-black-webfont.woff2", normal, 900);
+
+
+
+
+
+
+
+
+
 
 

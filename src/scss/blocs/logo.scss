@@ -1,0 +1,22 @@
+.logo__stroke1, .logo__stroke2 {
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  fill: none;
+  animation: dash 3s linear forwards;
+}
+
+.logo__letters {
+  opacity: 0;
+  fill: #FFFFFF;
+  animation: visible 3s linear forwards;
+}
+
+.logo__stroke1 {
+  stroke: #CED5FF;
+}
+
+.logo__stroke2 {
+  stroke: #C8A1F1;
+}

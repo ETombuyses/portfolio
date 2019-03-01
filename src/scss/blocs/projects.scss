@@ -1,22 +1,14 @@
-.projects__nespresso {
-  height: 100vh;
+.projects {
+  height: 300px;
   background-color: rgb(29, 10, 48);
+  max-height: 1500px;
+  padding: 30px;
   display: flex;
-  color: white;
+  justify-content: center;
 }
 
-
-.nespresso__images {
-  height: 200px;
-  width: 50vw;
-
-
-  img {
-    width: auto;
-    height: 100%;
-  }
-}
-
-.nespresso__description {
-  width: 50vw;
+.projects__title {
+  font-family: "Nothing";
+  color: $white;
+  font-size: 40px;
 }
