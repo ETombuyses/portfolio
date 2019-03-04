@@ -9,10 +9,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: visible 6s;
+  opacity: 0;
+  animation: visible 6s forwards;
 
   &:hover {
-  background: linear-gradient($purple, rgb(100, 154, 253));
+    background: linear-gradient($purple, rgb(100, 154, 253));
   }
 }
 

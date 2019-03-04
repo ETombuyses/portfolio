@@ -13,6 +13,7 @@
 .landing__logo {
   width: 70px;
   height: 70px;
+  z-index: 1;
 }
 
 .landing__title {
@@ -21,6 +22,8 @@
   font-size: 80px;
   opacity: 0;
   animation: visible 2s 0.5s forwards;
+  z-index:1;
+
 }
 
 .landing__line {
@@ -29,10 +32,13 @@
   width: 2px;
   background-color: white;
   margin: auto;
+  z-index:1;
+
 }
 
 .landing__line--first {
   animation: line 2s  0.2s forwards;
+
 }
 
 .landing__line--second {
@@ -46,6 +52,8 @@
   font-size: 50px;
   opacity: 0;
   animation: visible 6s forwards;
+  z-index:1;
+
 }
 
 .landing__intro {
@@ -59,6 +67,8 @@
   text-align: center;
   animation: visible 1s 2s forwards;
   margin-bottom: 10vh;
+  z-index:1;
+
 
   strong {
     font-weight: bolder;
@@ -73,6 +83,8 @@
   position: relative;
   opacity: 0;
   animation: visible 1s 2.5s forwards;
+  z-index:1;
+
 
   &::before {
     content: '';
