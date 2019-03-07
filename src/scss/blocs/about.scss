@@ -1,5 +1,5 @@
 .about {
-  max-height: 1500px;
+  // max-height: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +18,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
   opacity: 0;
+  width: 150px;
   transition: opacity 0.5s ease-in;
+
+  @include tablet {
+  width: 250px;
+  }
 
   &.is-visible {
     opacity: 1;
@@ -35,32 +39,46 @@
   
   &::before {
     content: url("../assets/images/losange.svg");
-    width: 175px;
+    width: 125px;
     position: absolute;
-    left: -80px;
-    top: 42px;
+    left: -60px;
     animation: scaling 8s infinite;
+
+    @include tablet {
+    width: 175px;
+    top: 42px;
+    left: -80px;
+    }
   }
 
   &::after {
     content: url("../assets/images/losange.svg");
-    width: 175px;
+    width: 125px;
     position: absolute;
-    right: -80px;
-    top: 42px;
+    right: -60px;
     animation: scaling 8s 4s infinite;
+
+    @include tablet {
+    width: 175px;
+    top: 42px;
+    right: -80px;
+    }
   }
 }
 
 .about__description {
-  font-family: Helvetica, Arial, sans-serif; // font to import ? 
+  font-family: "Montserrat", sans-serif; 
   font-weight: normal;
   font-size: 16px;
   line-height: 180%;
   text-align: center;
-  width: 70vw;
+  width: 80vw;
   max-width: 900px;
   padding-top: 30px;
+
+  @include tablet {
+    width: 70vw;
+  }
 
   strong {
     font-weight: bold;
@@ -69,12 +87,45 @@
 
 .about__link {
   color: $purple;
-  text-decoration: underline dashed;
+  position: relative;
+  z-index: 3;
+  transition: color 0.5 ease;
+
+  &::before {
+    content: '';
+    width: 110%;
+    height: 15%;
+    background:linear-gradient($purple, rgb(100, 154, 253));
+    position: absolute;
+    left: -5%;
+    bottom: -5%;
+    z-index: -1;
+    transition: height 0.5s ease;
+  }
+
+  &:hover {
+    color: white;
+
+    &::before {
+      content: '';
+      width: 110%;
+      height: 100%;
+      background:linear-gradient($purple, rgb(100, 154, 253));
+      position: absolute;
+      left: -5%;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
 }
 
 .about__skills {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
   opacity: 0;
 
@@ -91,4 +142,6 @@
       height: 100%;
     }
   }
+
+  
 }

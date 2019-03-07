@@ -8,22 +8,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .landing__logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   z-index: 1;
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .landing__title {
   font-family: "Nothing";
   color: $white;
-  font-size: 80px;
+  font-size: 30px;
+  text-align: center;
   opacity: 0;
   animation: visible 2s 0.5s forwards;
   z-index:1;
+  line-height: 150%;
 
+  @include tablet {
+    font-size: 50px;
+  }
+
+  @include pc {
+     font-size: 60px;
+  }
+
+  @include big {
+    font-size: 80px;
+  }
 }
 
 .landing__line {
@@ -33,7 +54,11 @@
   background-color: white;
   margin: auto;
   z-index:1;
+  display: none;
 
+  @include tablet {
+    display: flex;
+  }
 }
 
 .landing__line--first {
@@ -49,30 +74,50 @@
   color: $purple;
   font-family: "Montserrat";
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 20px;
   opacity: 0;
   animation: visible 6s forwards;
   z-index:1;
+  text-align: center;
+  line-height: 150%;
+
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include pc {
+    font-size: 50px;
+  }
 
 }
 
 .landing__intro {
   color: $white;
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 12px;
   line-height: 160%;
   font-weight: lighter;
-  width: 60vw;
+  width: 80vw;
   opacity: 0;
   text-align: center;
   animation: visible 1s 2s forwards;
-  margin-bottom: 10vh;
-  z-index:1;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+
+  @include tablet {
+    font-size: 16px;
+    padding-top: 0;
+    width: 60vw;
+  }
 
 
   strong {
     font-weight: bolder;
   }
+
+
 }
 
 .scrollIcon {

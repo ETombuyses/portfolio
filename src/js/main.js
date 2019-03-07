@@ -48,7 +48,15 @@ function createRandomPolygons() {
 
   setTimeout(function(){
     polygon.remove();
-  }, 12000);
+  }, 8000);
+
+  // window.addEventListener("resize", function() {
+  //   var newX = document.body.offsetWidth-80;
+  //   var newLeftPosition = randX - ( x - newX);
+
+  //   polygon.style.left = newLeftPosition + 'px';
+
+  // })
 }
 
 
